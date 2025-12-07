@@ -1,8 +1,6 @@
-# 🌌 Plumbus Landing Page
+# 🌌 Physics Society
 
-![Plumbus](https://cs8.pikabu.ru/post_img/big/2016/04/27/6/1461748084167073788.jpg)
-
-A stunning, interdimensional landing page for the mysterious yet ubiquitous Plumbus. Built with Astro and enhanced with cosmic animations.
+![Physics Society](/physicsocietyposter.png)
 
 ## ✨ Features
 
@@ -14,8 +12,8 @@ A stunning, interdimensional landing page for the mysterious yet ubiquitous Plum
 - 🎭 Custom animations and transitions
 - 🌟 SEO optimized for interdimensional search
 - 🌐 Blog section with MDX support
-- 🎯 Quantum-crystalline verification system
-- 🛡️ Galactic Federation compliance built-in
+- 🎯
+- 🛡️
 
 ## 🛠 Tech Stack
 
@@ -32,7 +30,7 @@ A stunning, interdimensional landing page for the mysterious yet ubiquitous Plum
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/plumbus-landing
+git clone https://github.com/yourusername/
 ```
 
 2. Install dependencies:
@@ -118,11 +116,7 @@ npm run preview
 
 ## 🔐 Security Features
 
-- Galactic Federation ID verification
-- Quantum-crystalline authentication
-- Interdimensional access controls
-- Temporal paradox prevention
-- Fleeb juice encryption standards
+
 
 ## 📝 License
 
@@ -130,11 +124,6 @@ MIT License - feel free to use this across any dimension
 
 ## 🌟 Credits
 
-- Design inspired by interdimensional aesthetics
-- Images sourced from various dimensions
-- Built with love by the Council of Ricks
-- Fleeb juice provided by certified Fleeb farmers
-- Schlami testing by professional Schlamis
 
 ## 🤝 Contributing
 
@@ -155,19 +144,7 @@ MIT License - feel free to use this across any dimension
 ## 💫 Special Thanks
 
 Special thanks to:
-- The Plumbus manufacturers
-- All the Fleeb juice providers
-- The Council of Ricks
-- Interdimensional quality testers
-- Beta dimension users
-- Quantum uncertainty reducers
 
 ## 📞 Support
 
 For support inquiries:
-- Email: help@plumbus.temaprint.com
-- Interdimensional Ticket System
-- Temporal Support Line
-- Emergency Schlami Contact
-
-Remember: Every Plumbus is unique, just like the dimension it comes from!
