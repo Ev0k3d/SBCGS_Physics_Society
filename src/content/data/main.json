@@ -1,153 +1,150 @@
 {
   "product": {
-    "name": "Plumbus",
-    "tagline": "Everybody Has One. Nobody Knows Why.",
+    "name": "Physics Society",
+    "tagline": "Explore. Experiment. Enlighten.",
     "heroImage": "/images/plumbus-hero.jpg",
     "video": {
-      "title": "How They Do It: Plumbus Edition",
+      "title": "Inside the Physics Society Sessions",
       "url": "https://www.youtube.com/watch?v=eMJk4y9NGvE"
     },
-    "description": "A Plumbus is your one-stop solution for everything you didn't know you needed. From reheating existential dread to polishing your Schlammy, Plumbus does it all — usually without asking why.",
+    "description": "The Physics Society is your gateway to mind-bending thought experiments, interactive demonstrations, and weekly sessions designed to expand your understanding of the universe.",
     "features": [
       {
-        "title": "Organic Yet Alarmingly Slippery",
-        "description": "Grown, not manufactured. Feels like a wet idea covered in ambition."
+        "title": "Hands-On Experiments",
+        "description": "Engage with classical and quantum physics experiments designed to challenge your intuition."
       },
       {
-        "title": "Built Using 100% Recycled Fleeb Residue",
-        "description": "Sustainably sourced from interdimensional leftovers. Tastes like regret. Don't eat it."
+        "title": "Weekly Interactive Sessions",
+        "description": "Led by Dr Aaron, our president, each session introduces new thought experiments and challenges."
       },
       {
-        "title": "Compatible with Most Dimensions",
-        "description": "Now works in Dimensions C-137 through Z-19… and probably some cursed ones we don't talk about."
+        "title": "Collaborative Learning Environment",
+        "description": "Work alongside peers, explore concepts together, and enhance your problem-solving skills."
       },
       {
-        "title": "Semi-Sentient Mood Sensor",
-        "description": "Changes color based on your mood. Turns purple if you lie to it."
+        "title": "Exploration of Cutting-Edge Topics",
+        "description": "From relativity to particle physics, discover ideas that push the boundaries of understanding."
       },
       {
-        "title": "Self-Rubbing Technology™",
-        "description": "No buttons, no interface — just rub it until it activates. Results vary."
+        "title": "Accessible to All Students",
+        "description": "Open to all levels, fostering curiosity and engagement across the school community."
       },
       {
-        "title": "Chrono-Absorbent Core",
-        "description": "Accidentally absorbs small amounts of time. Do not leave near children or paradoxes."
+        "title": "Dynamic Session Leader Interaction",
+        "description": "Learn the etiquette of engaging respectfully while exploring radical physics ideas."
       }
     ],
     "callToAction": {
-      "text": "Buy One Before It Buys You!",
+      "text": "Join the Physics Society Today!",
       "url": "/shop/plumbus"
     },
     "testimonials": [
       {
-        "name": "Rick Sanchez",
-        "quote": "Honestly? Even *I* don't know how it works. That's how you know it's good."
+        "name": "Dr Aaron",
+        "quote": "Our sessions are designed to make you think, question, and sometimes completely rethink what you know."
       },
       {
-        "name": "Stealy",
-        "quote": "I took one, then it took something from me. Fair trade, I guess."
+        "name": "Physics Member #1",
+        "quote": "Every week is a new adventure. The thought experiments blow my mind."
       },
       {
-        "name": "Summer Smith",
-        "quote": "It's weird, it's gross, it's kind of... elegant?"
+        "name": "Physics Member #2",
+        "quote": "It’s interactive, engaging, and educational — the perfect way to experience physics."
       },
       {
-        "name": "Blamph Worker #442",
-        "quote": "I rub the Fleeb until the Dinglebop is juiced. Standard procedure."
+        "name": "Guest Lecturer",
+        "quote": "The society fosters curiosity and challenges conventional thinking — highly recommended."
       }
     ],
     "specs": {
-      "Origin": "Hand-raised on Plumbubo Prime 51b",
-      "Material": "Mostly ethical Grodus, hypoallergenic Schlami membrane",
-      "Maintenance": "Rub regularly. Whisper compliments. Avoid eye contact.",
-      "Dimensions": "Relative to your shame",
-      "Weight": "Feels heavier when you're being watched"
+      "Origin": "Founded at our school in 2025",
+      "Material": "Student curiosity, creativity, and collaboration",
+      "Maintenance": "Attend weekly sessions. Stay curious. Respect peers.",
+      "Dimensions": "Limited only by imagination",
+      "Weight": "Influences minds proportionally to engagement"
     },
     "faq": [
       {
-        "question": "Is the Plumbus alive?",
-        "answer": "Legally, no. Emotionally, maybe."
+        "question": "Who can join the Physics Society?",
+        "answer": "All students with a curiosity for physics, from beginners to advanced learners, are welcome."
       },
       {
-        "question": "Can I wash it?",
-        "answer": "Yes, but it might scream. That's normal. Probably."
+        "question": "Do I need prior physics experience?",
+        "answer": "No. Sessions are designed to be inclusive, engaging, and educational for all levels."
       },
       {
-        "question": "Will it bond with my soul?",
-        "answer": "Only if you let it. Or if it decides to. It's complicated."
+        "question": "Are the sessions safe?",
+        "answer": "Yes. Safety protocols are always followed."
       },
       {
-        "question": "Is there a user manual?",
-        "answer": "Yes. It's written in a forgotten dialect of Intergalactic Bureaucratese."
+        "question": "Is there a schedule for sessions?",
+        "answer": "Yes. Sessions occur weekly, and details are posted on our website and society announcements."
       },
       {
-        "question": "Can I return it?",
-        "answer": "Return policy varies by cosmic cycle and lunar mood."
+        "question": "How can I contribute?",
+        "answer": "Members can lead small demonstrations, propose experiments, or assist with session organisation."
       }
     ],
     "footer": {
-      "legalDisclaimer": "Plumbus is not responsible for unintended consequences, spontaneous combustion, or accidental enlightenment. Use responsibly.",
+      "legalDisclaimer": "The Physics Society is not responsible for unexpected bursts of curiosity or mind-expanding revelations. Engage responsibly.",
       "socialLinks": [
         { "platform": "Instagram", "url": "https://www.instagram.com/t_3_ma" },
         { "platform": "Twitter", "url": "https://twitter.com/temaprint" },
         { "platform": "Facebook", "url": "https://facebook.com/temaprint" }
       ],
-      "contactEmail": "netemtem@gmail.com"
+      "contactEmail": "sbcgsphysicsociety@hotmail.com"
     }
   },
   "seo": {
-    "title": "Buy Your Very Own Plumbus – The Universal Household Essential | Rick and Morty Universe",
-    "description": "Everyone has a Plumbus, but no one knows why. Discover the only all-purpose device approved across dimensions. Grown, not manufactured. 100% confusing. Get yours today!",
+    "title": "Join the Physics Society – Interactive Sessions and Thought Experiments",
+    "description": "Explore mind-bending experiments and weekly interactive physics sessions led by Dr Aaron. Grow your curiosity and understanding of the universe today!",
     "keywords": [
-      "Plumbus",
-      "Rick and Morty",
-      "Buy Plumbus",
-      "Plumbus for sale",
-      "Interdimensional appliances",
-      "Fleeb juice",
-      "How They Do It",
-      "Schlami membrane",
-      "Grodus",
-      "Weird gadgets",
-      "Universal tool",
-      "Alien household device",
-      "Dinglebop cleaner"
+      "Physics Society",
+      "Thought Experiments",
+      "School Physics Club",
+      "Interactive Physics",
+      "Dr Aaron",
+      "Student Science Club",
+      "Physics Workshops",
+      "Weekly Sessions",
+      "Educational Activities",
+      "Hands-On Physics"
     ],
-    "author": "Plumbus Marketing Collective 51b",
+    "author": "Physics Society Leadership Team",
     "canonical": "https://plumbus.temaprint.com/shop",
     "robots": "index, follow",
     "language": "en-US",
     "openGraph": {
-      "og:title": "Plumbus – The Interdimensional Device Everyone Needs",
-      "og:description": "It's slimy, it's warm, it's confusing – and now it can be yours. Grown with love (and Fleeb) on Plumbubo Prime 51b.",
+      "og:title": "Physics Society – Explore, Experiment, Enlighten",
+      "og:description": "Join the Physics Society for interactive sessions, thought experiments, and weekly explorations into the universe.",
       "og:type": "product",
       "og:url": "https://plumbus.temaprint.com/shop",
       "og:image": "https://plumbus.temaprint.com/assets/images/plumbus-og.jpg",
-      "og:site_name": "Plumbus Official Shop"
+      "og:site_name": "Physics Society"
     },
     "twitterCard": {
       "card": "summary_large_image",
       "site": "@plumbus4ever",
       "creator": "@blamphWorker442",
-      "title": "Get Your Plumbus Now – Everybody Has One!",
-      "description": "Buy the universal home device approved by 97% of sentient species (and Rick).",
+      "title": "Join the Physics Society Today!",
+      "description": "Participate in weekly interactive sessions and mind-bending thought experiments.",
       "image": "https://plumbus.temaprint.com/assets/images/plumbus-twitter.jpg"
     },
     "structuredData": {
       "@context": "https://schema.org",
       "@type": "Product",
-      "name": "Plumbus",
+      "name": "Physics Society",
       "image": "https://plumbus.temaprint.com/assets/images/plumbus-og.jpg",
-      "description": "A mysterious, all-purpose organic device seen across the Rick and Morty universe. Used for cleaning, cooking, broadcasting and unknown functions.",
+      "description": "A student-led society offering interactive physics sessions, workshops, and thought experiments.",
       "brand": {
         "@type": "Thing",
-        "name": "Plumbus Inc. (Federation-Compliant)"
+        "name": "Physics Society"
       },
       "offers": {
         "@type": "Offer",
         "url": "https://plumbus.temaprint.com/shop",
         "priceCurrency": "BRP",
-        "price": "6.5",
+        "price": "0",
         "availability": "https://schema.org/InStock",
         "itemCondition": "https://schema.org/NewCondition"
       }
