@@ -5,7 +5,7 @@ pubDate: 'Dec 07 2025'
 heroImage: '/physicsocietyposter.png'
 ---
 
-Every home has one, yet few understand its true nature. The Plumbus, a household device so common that its presence is taken for granted across infinite dimensions, remains one of the most enigmatic inventions in the multiverse.
+Curiosity is the most powerful tool a student can bring to any room. The Physics Society exists to spark that curiosity and turn questions into discoveries. From the tiniest particle to the largest galaxy, we explore how the universe works and why it behaves in such astonishing ways.
 
 ## The Basics
 

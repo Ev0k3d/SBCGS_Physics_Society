@@ -26,28 +26,7 @@
 - RSS feed support
 - Sitemap generation
 
-## 🚀 Getting Started
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm run dev
-```
-
-4. Open your browser and visit `http://localhost:4321`
-
-## 📁 Project Structure
-
-```
 /
 ├── public/
 │   ├── fonts/
@@ -71,7 +50,7 @@ npm run dev
 │   │   ├── blog/
 │   │   │   └── [...slug].astro
 │   │   ├── shop/
-│   │   │   └── plumbus.astro
+│   │   │   └── physics-society.astro
 │   │   ├── about.astro
 │   │   └── index.astro
 │   └── styles/
@@ -120,7 +99,6 @@ npm run preview
 
 ## 📝 License
 
-MIT License - feel free to use this across any dimension
 
 ## 🌟 Credits
 
@@ -135,11 +113,6 @@ MIT License - feel free to use this across any dimension
 
 ### Development Guidelines
 
-- Follow the Interdimensional Style Guide
-- Test across multiple dimensions
-- Verify Fleeb compatibility
-- Maintain Schlami standards
-- Document any temporal anomalies
 
 ## 💫 Special Thanks
 
