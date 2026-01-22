@@ -1,5 +1,5 @@
 ---
-title: 'Physics Society'
+title: 'The Ultraviolet Catastrophe'
 description: 'Physics Society - Week 2'
 pubDate: 'Dec 07 2025'
 heroImage: '/physicsocietyposter.png'
