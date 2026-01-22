@@ -1,30 +1,26 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-import productData from '../content/data/main.json';
+import BaseHead from '../../components/BaseHead.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import { getCollection } from 'astro:content';
-import FormattedDate from '../components/FormattedDate.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
 
-const { product, seo } = productData;
-
-// Get blog posts
 const posts = (await getCollection('blog')).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
-// HD Image URLs
 const hdImages = {
   portal1: "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=2048&q=95",
   portal2: "https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?w=2048&q=95",
-  texture: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?w=2048&q=95",
-  product: "/physicsocietyposter.png"
+  texture: "https://images.unsplash.com/photo-1579546929662-711aa81148cf?w=2048&q=95"
 };
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={seo.title} description={seo.description} />
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style define:vars={{
 			portalBg1: `url(${hdImages.portal1})`,
 			portalBg2: `url(${hdImages.portal2})`,
@@ -55,13 +51,6 @@ const hdImages = {
 				padding: 0;
 			}
 
-			.container {
-				width: 100%;
-				max-width: 2400px;
-				margin: 0 auto;
-				padding: 0 2rem;
-			}
-
 			.portal-bg {
 				position: fixed;
 				top: 0;
@@ -86,75 +75,182 @@ const hdImages = {
 				}
 			}
 
-			/* ... rest of your original CSS continues exactly as you had it ... */
+			.blog-header {
+				padding: 6rem 2rem;
+				text-align: center;
+				position: relative;
+				background: var(--glass-light);
+				backdrop-filter: blur(10px);
+				border-bottom: 1px solid var(--glass-dark);
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: var(--portalBg1) center/cover;
+					opacity: 0.1;
+					mix-blend-mode: overlay;
+					z-index: -1;
+				}
+			}
+
+			.blog-header h1 {
+				font-size: clamp(3rem, 6vw, 5rem);
+				color: var(--secondary);
+				margin: 0;
+				text-shadow: 
+					0 0 10px var(--glow),
+					0 0 20px var(--glow),
+					0 0 40px var(--glow);
+			}
+
+			.blog-header p {
+				font-size: clamp(1.2rem, 2vw, 1.5rem);
+				max-width: 800px;
+				margin: 2rem auto 0;
+				opacity: 0.9;
+			}
+
+			.blog-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				padding: 4rem 2rem;
+				max-width: 2400px;
+				margin: 0 auto;
+			}
+
+			.blog-card {
+				background: var(--glass-light);
+				border-radius: 20px;
+				overflow: hidden;
+				backdrop-filter: blur(10px);
+				border: 1px solid var(--glass-dark);
+				transition: all 0.3s ease;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.blog-card:hover {
+				transform: translateY(-10px);
+				box-shadow: 
+					0 10px 30px rgba(0, 0, 0, 0.3),
+					0 0 20px var(--glow);
+				border-color: rgba(151, 206, 76, 0.3);
+			}
+
+			.blog-image {
+				width: 100%;
+				height: 200px;
+				object-fit: cover;
+			}
+
+			.blog-content {
+				padding: 1.5rem;
+				flex-grow: 1;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.blog-title {
+				color: var(--secondary);
+				font-size: 1.5rem;
+				margin: 0 0 1rem 0;
+				line-height: 1.2;
+				text-shadow: 0 0 10px var(--glow);
+			}
+
+			.blog-date {
+				color: rgba(var(--text), 0.7);
+				font-size: 0.9rem;
+				margin-bottom: 1rem;
+			}
+
+			.blog-description {
+				color: var(--text);
+				margin: 0;
+				flex-grow: 1;
+				line-height: 1.6;
+			}
+
+			.blog-link {
+				text-decoration: none;
+				color: inherit;
+				display: block;
+				height: 100%;
+			}
+
+			.featured-post {
+				grid-column: 1 / -1;
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 2rem;
+				background: var(--glass-medium);
+				padding: 2rem;
+				border-radius: 30px;
+				margin-bottom: 2rem;
+			}
+
+			.featured-post .blog-image {
+				height: 400px;
+				border-radius: 20px;
+			}
+
+			.featured-post .blog-content {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.featured-post .blog-title {
+				font-size: 2.5rem;
+			}
+
+			.featured-post .blog-description {
+				font-size: 1.2rem;
+			}
+
+			@media (max-width: 1024px) {
+				.featured-post {
+					grid-template-columns: 1fr;
+				}
+
+				.featured-post .blog-image {
+					height: 300px;
+				}
+			}
+
+			@media (max-width: 768px) {
+				.blog-grid {
+					grid-template-columns: 1fr;
+					padding: 2rem 1rem;
+				}
+
+				.blog-header {
+					padding: 4rem 1rem;
+				}
+
+				.featured-post .blog-title {
+					font-size: 2rem;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div class="portal-bg"></div>
+		<Header />
 		<main>
-			<section class="hero">
-				<div class="hero-content">
-					<div class="hero-text">
-						<h1>{product.name}</h1>
-						<p class="tagline">{product.tagline}</p>
-						<p class="description">{product.description}</p>
-						<a href={product.callToAction.url} class="cta-button">
-							{product.callToAction.text}
-						</a>
-					</div>
-					<div class="hero-image">
-						<img src={hdImages.product} alt="Physics Society" />
-					</div>
-				</div>
-			</section>
-
-			<section class="features">
-				<div class="container">
-					<h2>Interdimensional Features</h2>
-					<div class="features-grid">
-						{product.features.map((feature) => (
-							<div class="feature-card">
-								<h3>{feature.title}</h3>
-								<p>{feature.description}</p>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			<section class="testimonials">
-				<div class="container">
-					<h2>Multiversal Reviews</h2>
-					<div class="testimonials-grid">
-						{product.testimonials.map((testimonial) => (
-							<div class="testimonial-card">
-								<p class="testimonial-quote">"{testimonial.quote}"</p>
-								<div class="testimonial-name">- {testimonial.name}</div>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			<section class="specs">
-				<div class="container">
-					<h2>Quantum Specifications</h2>
-					<div class="specs-grid">
-						{Object.entries(product.specs).map(([key, value]) => (
-							<div class="spec-item">
-								<div class="spec-label">{key}</div>
-								<div class="spec-value">{value}</div>
-							</div>
-						))}
-					</div>
-				</div>
-			</section>
-
-			<section class="blog-section">
-				<div class="container">
-					<h2>Interdimensional Blog</h2>
-					<div class="blog-grid">
-						{posts.map((post) => (
+			<div class="blog-header">
+				<h1>Interdimensional Blog</h1>
+				<p>Explore the mysteries and marvels of Physics across infinite dimensions</p>
+			</div>
+			<div class="blog-grid">
+				{posts.map((post, index) => (
+					index === 0 ? (
+						<div class="featured-post">
 							<a href={`/blog/${post.id}/`} class="blog-link">
 								<article class="blog-card">
 									<img 
@@ -163,7 +259,7 @@ const hdImages = {
 										class="blog-image"
 									/>
 									<div class="blog-content">
-										<h3 class="blog-title">{post.data.title}</h3>
+										<h2 class="blog-title">{post.data.title}</h2>
 										<div class="blog-date">
 											<FormattedDate date={post.data.pubDate} />
 										</div>
@@ -171,24 +267,28 @@ const hdImages = {
 									</div>
 								</article>
 							</a>
-						))}
-					</div>
-				</div>
-			</section>
-
-			<footer>
-				<div class="container">
-					<div class="social-links">
-						{product.footer.socialLinks.map((link) => (
-							<a href={link.url} target="_blank" rel="noopener noreferrer">
-								{link.platform}
-							</a>
-						))}
-					</div>
-					<p class="disclaimer">{product.footer.legalDisclaimer}</p>
-					<p>Contact: <a href={`mailto:${product.footer.contactEmail}`}>{product.footer.contactEmail}</a></p>
-				</div>
-			</footer>
+						</div>
+					) : (
+						<a href={`/blog/${post.id}/`} class="blog-link">
+							<article class="blog-card">
+								<img 
+									src={post.data.heroImage} 
+									alt="" 
+									class="blog-image"
+								/>
+								<div class="blog-content">
+									<h3 class="blog-title">{post.data.title}</h3>
+									<div class="blog-date">
+										<FormattedDate date={post.data.pubDate} />
+									</div>
+									<p class="blog-description">{post.data.description}</p>
+								</div>
+							</article>
+						</a>
+					)
+				))}
+			</div>
 		</main>
+		<Footer />
 	</body>
 </html>
