@@ -1,7 +1,7 @@
 ---
-title: 'Physics Society'
-description: 'Explore the mind-bending experiments, thought-provoking sessions, and weekly cosmic adventures hosted by our Physics Society.'
-pubDate: 'Dec 07 2025'
+title: 'First Session'
+description: 'Had our first Physics Society session on Thursday 16th October!'
+pubDate: 'Oct 16 2025'
 heroImage: '/physicsocietyposter.png'
 ---
 
