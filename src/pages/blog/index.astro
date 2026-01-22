@@ -31,7 +31,7 @@ const hdImages = {
 				--primary-dark: #7c2d12;
 				--secondary: #fb923c;
 				--text: #e0e0e0;
-				--background: #0d1f13;
+				--background: #1a0f0a; /* warm dark base */
 				--accent: #44281d;
 				--glow: rgba(251, 191, 36, 0.3);
 			}
@@ -58,48 +58,44 @@ const hdImages = {
 				width: 100%;
 				height: 100%;
 				background: 
-					radial-gradient(circle at 10% 20%, rgba(42, 98, 61, 0.4) 0%, transparent 50%),
-					radial-gradient(circle at 90% 80%, rgba(251, 191, 36, 0.2) 0%, transparent 50%),
+					radial-gradient(circle at 10% 20%, rgba(249, 115, 22, 0.25) 0%, transparent 50%),
+					radial-gradient(circle at 90% 80%, rgba(251, 191, 36, 0.12) 0%, transparent 50%),
 					var(--background);
 				z-index: -1;
-				&::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background: var(--textureBg) center/cover;
-					opacity: 0.05;
-					mix-blend-mode: overlay;
-				}
+			}
+
+			.portal-bg::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: var(--textureBg) center/cover;
+				opacity: 0.05;
+				mix-blend-mode: overlay;
 			}
 
 			.blog-header {
 				padding: 6rem 2rem;
 				text-align: center;
 				position: relative;
-<<<<<<< HEAD
 				background: rgba(249, 115, 22, 0.3);
 				backdrop-filter: blur(10px);
 				border-bottom: 1px solid rgba(251, 191, 36, 0.1);
-=======
-				background: var(--glass-light);
-				backdrop-filter: blur(10px);
-				border-bottom: 1px solid var(--glass-dark);
->>>>>>> 310ac74952b8a15073f8ceb780e21de64e5c59a5
-				&::before {
-					content: '';
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: 100%;
-					height: 100%;
-					background: var(--portalBg1) center/cover;
-					opacity: 0.1;
-					mix-blend-mode: overlay;
-					z-index: -1;
-				}
+			}
+
+			.blog-header::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: var(--portalBg1) center/cover;
+				opacity: 0.1;
+				mix-blend-mode: overlay;
+				z-index: -1;
 			}
 
 			.blog-header h1 {
@@ -129,19 +125,11 @@ const hdImages = {
 			}
 
 			.blog-card {
-<<<<<<< HEAD
 				background: rgba(249, 115, 22, 0.3);
 				border-radius: 20px;
 				overflow: hidden;
 				backdrop-filter: blur(10px);
 				border: 1px solid rgba(251, 191, 36, 0.1);
-=======
-				background: var(--glass-light);
-				border-radius: 20px;
-				overflow: hidden;
-				backdrop-filter: blur(10px);
-				border: 1px solid var(--glass-dark);
->>>>>>> 310ac74952b8a15073f8ceb780e21de64e5c59a5
 				transition: all 0.3s ease;
 				height: 100%;
 				display: flex;
@@ -150,9 +138,7 @@ const hdImages = {
 
 			.blog-card:hover {
 				transform: translateY(-10px);
-				box-shadow: 
-					0 10px 30px rgba(0, 0, 0, 0.3),
-					0 0 20px var(--glow);
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), 0 0 20px var(--glow);
 				border-color: rgba(251, 191, 36, 0.3);
 			}
 
@@ -202,11 +188,7 @@ const hdImages = {
 				display: grid;
 				grid-template-columns: 1fr 1fr;
 				gap: 2rem;
-<<<<<<< HEAD
 				background: rgba(194, 65, 12, 0.5);
-=======
-				background: var(--glass-medium);
->>>>>>> 310ac74952b8a15073f8ceb780e21de64e5c59a5
 				padding: 2rem;
 				border-radius: 30px;
 				margin-bottom: 2rem;
