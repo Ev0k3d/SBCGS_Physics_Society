@@ -1,6 +1,6 @@
 ---
 title: 'Rohan Daggar - Guest Speaker'
-description: 'ERohan — a former St Bernard’s student — shared his journey from secondary school to working in a research position at the University of Cambridge.'
+description: 'Rohan — a former St Bernard’s student — shared his journey from secondary school to working in a research position at the University of Cambridge.'
 pubDate: 'Dec 07 2025'
 heroImage: '/physicsocietyposter.png'
 ---
